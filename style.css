@@ -551,7 +551,8 @@ header .shopping-cart.active {
      background: #fff;
 }
 .footer .box-container{
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 .footer .box-container .box{
     margin: auto;
@@ -586,13 +587,24 @@ line-height: 1.8;
     color: var(--light-color);
     padding: 1rem 0;
   } 
+  .footer .box-container .box .share a{
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 2rem;
+  }
 .categories .box-container .box .content p{
   font-size: 1.5rem;
   color: var(--light-color);
   line-height: 1.8;
   padding: .5rem 0;
 }
-
+.box .links a:hover{
+      
+}
 
 
 
